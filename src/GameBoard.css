@@ -1,0 +1,75 @@
+.GameBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.GameBoard h1 {
+    color: white;
+    margin: 20px;
+}
+.GameBoard button {
+    border: 0;
+    width: 15rem;
+    height: 4rem;
+    background-color: yellow;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.score-card {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.playing-area {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+
+
+.input-tap {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-tap:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.input-tap i {
+    font-size: 5em;
+}
+
+.fa-xmark {
+    color: red;
+}
+
+@media only screen and (max-width:679px) {
+
+    .playing-area {
+        width: 90%;
+        height: 300px;
+    }
+
+}
